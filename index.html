@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    
+    <style>
+        * {
+            font-family: 'Raleway', sans-serif;
+        }
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 85%;
+            padding-top: 30px;
+            text-align: center;
+            margin: auto;
+            /* background-color: aqua; */
+        }
+        .center {
+            margin: auto;
+        }
+        h1 {
+            font-size: 48px;
+        }
+        h2 {
+            font-size: 28px;
+            /* text-align: center; */
+        }
+
+        h3 {
+            text-align: left;
+        }
+        .footer {
+            width: 50%;
+            margin: auto;
+        }
+        .div2 {flex: 1; display: block; width: 512px;}
+
+        tr.spaceUnder>td {
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DALL-E2 / LDM Generation Quality Comparison</h1>
+
+        <hr>
+
+        <table class="center">
+            <tr>
+                <td><h2>[1] DALL-E2 (1024*1024)</h2></td>
+                <td><h2>[2] LDM (256*256) w/ PLMS sampling (steps=20)</h2></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img1.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) A t-shirt with three penguins howling at the moon</h3>
+                        <h3>(한국어) 달을 향해 울부짖는 펭귄 세 마리가 그려진 티셔츠</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img1.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img2.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) A photo of a giraffe on a jet ski</h3>
+                        <h3>(한국어) 제트스키를 탄 기린의 사진</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img2.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img3.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) A floating skateboard</h3>
+                        <h3>(한국어) 떠다니는 스케이트보드</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img3.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img4.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) Puppy cloud</h3>
+                        <h3>(한국어) 강아지 구름</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img4.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img5.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) Antique photo of a knight riding a T-Rex</h3>
+                        <h3>(한국어) 티렉스를 타고 있는 기사의 고풍스러운 사진</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img5.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img6.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) Sneakers painted with space constellations</h3>
+                        <h3>(한국어) 우주 별자리가 그려진 운동화</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img6.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img7.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) An interdimensional quantum film camera</h3>
+                        <h3>(한국어) 차원간 양자 필름 카메라</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img7.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img8.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) Reverse waterfall rainbow spiral</h3>
+                        <h3>(한국어) 무지개 나선형 역폭포</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img8.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img9.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) A chair that looks like a frosted cupcake</h3>
+                        <h3>(한국어) 서리가 내린 컵케이크처럼 생긴 의자</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img9.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img10.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) Mount Everest made of cake, digital art</h3>
+                        <h3>(한국어) 케이크로 만들어진 에버레스트 산, 디지털 아트</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img10.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img11.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) Caturday, digital art</h3>
+                        <h3>(한국어) Caturday, 디지털 아트</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img11.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img12.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) A realistic photo of a muddy dog</h3>
+                        <h3>(한국어) 진흙투성이 개의 실제 사진</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img12.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img13.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) That Friday feeling, when the sun is shining and the vibe is just right</h3>
+                        <h3>(한국어) 햇살이 비치고 분위기가 딱 좋을 때 그 금요일 느낌</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img13.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img14.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) The Big Bang, digital art</h3>
+                        <h3>(한국어) 빅뱅, 디지털 아트</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img14.png" width="1024"></td>
+            </tr>
+
+            <tr class="spaceUnder">
+                <td>
+                    <img src="./samples/dalle2/img15.png" width="512">
+                    <div class="div2">
+                        <h3>(Eng) A Baltimore Oriole perched on a baseball, painted in the style of James Audubon</h3>
+                        <h3>(한국어) 제임스 오듀본 스타일로 그려진 야구공 위에 앉아있는 볼티모어 오리올(새)</h3>
+                    </div>
+                </td>
+                <td><img src="./samples/ldm/img15.png" width="1024"></td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <div class="footer">
+            <h3>[1] DALL-E2 images are directly retrieved from <a href="https://www.instagram.com/openaidalle/">DALL-E2 Instagram</a>. All rights belong to <a href="https://openai.com/terms/">OpenAI</a>. This page is built just to compare the performance of two algorithms.</h3>
+            <h3>[2] LDM images are generated using <a href="https://github.com/CompVis/latent-diffusion">Latent Diffusion Models</a>.</h3>
+        </div>
+    </div>
+</body>
+</html>
